@@ -17,10 +17,10 @@ public class StudentManager {
     StudentManager manager = new StudentManager();
 
     for (int i = 0; i < IDs.length; i++) {
-     try{ Student student = manager.find(IDs[i]);}
-     catch (StudentNotFoundException ex){
-       System.err.print(ex);
-     }
+      try{ Student student = manager.find(IDs[i]);}
+      catch (StudentNotFoundException ex){
+        System.err.print(ex);
+      }
     }
 
   }
